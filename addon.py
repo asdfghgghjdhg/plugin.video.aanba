@@ -96,8 +96,8 @@ def getBroadcasts():
 
     return result
 
-if __name__ == '__main__':
-    params = dict(parse_qsl(sys.argv[2][1:]))
+def main(paramStr):
+    params = dict(parse_qsl(paramStr))
 
     if not params:
         xbmcplugin.setContent(PLUGIN_HANDLE, "videos")
@@ -131,3 +131,6 @@ if __name__ == '__main__':
             xbmc.executebuiltin('RunPlugin({})'.format(castUrl))
         else:
             xbmc.executebuiltin('PlayMedia({})'.format(castUrl))
+
+if __name__ == '__main__':
+    main(sys.argv[2][1:])
