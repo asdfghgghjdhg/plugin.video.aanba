@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+	<category label="30000">
+		<setting label="30001" type="bool" id="onlineOnly" default="false"/>
+		<!--<setting id="id_addon" type="addon" label="30002" default="" addontype="xbmc.python.pluginsource" multiselect="true" />-->
+	</category>
+</settings>

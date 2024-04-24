@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<addon id="plugin.video.aanba" name="aanba.ru" version="0.0.1" provider-name="asdfghgghjdhg">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.22.0"/>
+		<import addon="plugin.video.youtube" version="7.0.0" optional="true"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<assets>
+			<icon>resources/media/icon.png</icon>
+			<fanart>resources/media/fanart.jpg</fanart>
+		</assets>
+		<platform>all</platform>
+		<license>GPL-2.0-or-later</license>
+		<website>https://aanba.ru</website>
+		<summary lang="ru_RU">Видеодополнение для aanba.ru</summary>
+		<description lang="ru_RU">Возвможность просматривать видеоролики и онлайн-трансляции с сайта aanba.ru</description>
+	</extension>
+</addon>
