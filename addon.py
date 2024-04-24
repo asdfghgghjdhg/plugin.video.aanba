@@ -50,6 +50,7 @@ def getBroadcasts():
         team1Logo = ''
         team2Logo = ''
         poster = ''
+        castLink = ''
         castUrl = ''
         plot = ''
         
@@ -120,7 +121,7 @@ def main(paramStr):
             listItem.setProperty('IsPlayable', 'false')
             xbmcplugin.addDirectoryItem(PLUGIN_HANDLE, url, listItem, False)
 
-        xbmcplugin.endOfDirectory(PLUGIN_HANDLE)
+        xbmcplugin.endOfDirectory(PLUGIN_HANDLE, True, True, False)
 
     elif params['video'] != '':
 
