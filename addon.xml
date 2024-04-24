@@ -17,6 +17,8 @@
 		<license>GPL-2.0-or-later</license>
 		<website>https://aanba.ru</website>
 		<summary lang="ru_RU">Видеодополнение для aanba.ru</summary>
-		<description lang="ru_RU">Возвможность просматривать видеоролики и онлайн-трансляции с сайта aanba.ru</description>
+		<summary lang="en_GB">aanba.ru Video Plugin</summary>
+		<description lang="ru_RU">Возможность просматривать видеоролики и онлайн-трансляции с сайта aanba.ru</description>
+		<description lang="en_GB">Way to watch live broadcasts and video from aanba.ru</description>
 	</extension>
 </addon>

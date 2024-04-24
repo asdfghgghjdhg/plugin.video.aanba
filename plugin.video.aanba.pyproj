@@ -28,6 +28,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="addon.xml" />
+    <Content Include="resources\language\resource.language.en_gb\strings.po" />
     <Content Include="resources\language\resource.language.ru_ru\strings.po" />
     <Content Include="resources\media\icon.png" />
     <Content Include="resources\media\logo.png" />
@@ -35,6 +36,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="resources\" />
+    <Folder Include="resources\language\resource.language.en_gb\" />
     <Folder Include="resources\language\resource.language.ru_ru\" />
     <Folder Include="resources\media\" />
     <Folder Include="resources\language\" />

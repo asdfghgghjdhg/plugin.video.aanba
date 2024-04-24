@@ -19,8 +19,8 @@ msgstr ""
 
 msgctxt "#30000"
 msgid "General"
-msgstr "Общие"
+msgstr ""
 
 msgctxt "#30001"
 msgid "Show Live Only"
-msgstr "Показывать только онлайн-трансляции"
+msgstr ""
