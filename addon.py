@@ -126,7 +126,7 @@ def main(paramStr):
             xbmcplugin.addDirectoryItem(PLUGIN_HANDLE, url, listItem, False)
 
         if len(broadcasts) > 0:
-            xbmcplugin.endOfDirectory(PLUGIN_HANDLE, True, True, False)
+            xbmcplugin.endOfDirectory(PLUGIN_HANDLE, True, False, False)
         else:
             xbmcgui.Dialog().ok(xbmcaddon.Addon().getAddonInfo('name'), xbmcaddon.Addon().getLocalizedString(30101))
 
