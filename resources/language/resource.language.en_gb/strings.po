@@ -24,3 +24,7 @@ msgstr ""
 msgctxt "#30001"
 msgid "Show Live Only"
 msgstr ""
+
+msgctxt "#30101"
+msgid "There is no any broadcasts now.\nPlease check it later."
+msgstr ""

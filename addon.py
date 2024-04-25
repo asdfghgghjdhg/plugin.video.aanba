@@ -27,7 +27,7 @@ def getBroadcasts():
 
     schedulesData = re.findall('<div class="col-xs-12 col-md-6 jbzoo-item jbzoo-item-match jbzoo-item-full">.*data_date="(.*?)">[\s\S]*?title="(.*?)"[\s\S]*?src="(.*?)"[\s\S]*?<span class="mf-31">([\s\S]*?)<\/span>[\s\S]*?title="(.*?)"[\s\S]*?src="(.*?)"', scheduleBlock.group(0))
     if not schedulesData:
-        return []
+        schedulesData = []
 
     casts = re.search('<ul class="nav nav-tabs" id="broadcasts">[\s\S]*<div class="col-md-3 p-no">', response.text)
     if not casts:
@@ -125,7 +125,10 @@ def main(paramStr):
             listItem.setProperty('IsPlayable', 'false')
             xbmcplugin.addDirectoryItem(PLUGIN_HANDLE, url, listItem, False)
 
-        xbmcplugin.endOfDirectory(PLUGIN_HANDLE, True, True, False)
+        if len(broadcasts) > 0:
+            xbmcplugin.endOfDirectory(PLUGIN_HANDLE, True, True, False)
+        else:
+            xbmcgui.Dialog().ok(xbmcaddon.Addon().getAddonInfo('name'), xbmcaddon.Addon().getLocalizedString(30101))
 
     elif params['video'] != '':
 

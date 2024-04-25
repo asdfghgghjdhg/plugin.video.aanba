@@ -24,3 +24,7 @@ msgstr "Общие"
 msgctxt "#30001"
 msgid "Show Live Only"
 msgstr "Показывать только онлайн-трансляции"
+
+msgctxt "#30101"
+msgid "There is no any broadcasts now.\nPlease check it later."
+msgstr "Сейчас нет ни одной трансляции. Пожалуйста, попробуйте зайти позже"
