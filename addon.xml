@@ -20,5 +20,6 @@
 		<summary lang="en_GB">aanba.ru Video Plugin</summary>
 		<description lang="ru_RU">Возможность просматривать видеоролики и онлайн-трансляции с сайта aanba.ru</description>
 		<description lang="en_GB">Way to watch live broadcasts and video from aanba.ru</description>
+		<source>https://github.com/asdfghgghjdhg/plugin.video.aanba</source>
 	</extension>
 </addon>
