@@ -65,6 +65,10 @@ def getBroadcasts():
         if re.search('kinescope.io', links[i]):
             response = requests.get(links[i])
             if response.ok:
+                castEnded = re.search("window.KinescopeIframeStubMessage = '(Трансляция завершена|Broadcast ended)';", response.text)
+                if castEnded:
+                    continue
+
                 scriptData = re.search('<script type="application\/ld\+json">([\s\S]*?)<\/script>', response.text)
                 if scriptData:
                     try:
@@ -92,7 +96,7 @@ def getBroadcasts():
                         except:
                             castUrl = ''
 
-        if xbmcplugin.getSetting(PLUGIN_HANDLE, 'onlineOnly') != 'true' or castTime != '':
+        if castUrl != '' and (xbmcplugin.getSetting(PLUGIN_HANDLE, 'onlineOnly') != 'true' or castTime != ''):
             result.append({'title': castTitle, 'url': castUrl, 'plot': plot, 'poster': poster})
 
     return result
