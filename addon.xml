@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<addon id="plugin.video.aanba" name="aanba.ru" version="0.9.4" provider-name="asdfghgghjdhg">
+<addon id="plugin.video.aanba" name="aanba.ru" version="1.0.0" provider-name="asdfghgghjdhg">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0"/>
@@ -14,6 +14,7 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<platform>all</platform>
+		<language>ru</language>
 		<license>GPL-2.0-or-later</license>
 		<website>https://aanba.ru</website>
 		<summary lang="ru_RU">Видеодополнение для aanba.ru</summary>
@@ -21,5 +22,6 @@
 		<description lang="ru_RU">Возможность просматривать видеоролики и онлайн-трансляции с сайта aanba.ru</description>
 		<description lang="en_GB">Way to watch live broadcasts and video from aanba.ru</description>
 		<source>https://github.com/asdfghgghjdhg/plugin.video.aanba</source>
+		<email>asdfghgghjdhg@gmail.com</email>
 	</extension>
 </addon>
